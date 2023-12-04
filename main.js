@@ -2,10 +2,9 @@ function emailSend() {
   var userName = document.getElementById("name").value;
   var phone = document.getElementById("phone").value;
   var email = document.getElementById("email").value;
-  var password = document.getElementById("password").value;
 
   var messageBody =
-    "Name: " + userName + "<br/> Phone: " + phone + "<br/> Email: " + email + "<br/> Password: " + password;
+    "Name: " + userName + "<br/> Phone: " + phone + "<br/> Email: " + email;
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: "hejhej6857@gmail.com",
@@ -21,4 +20,11 @@ function emailSend() {
       swal("Error", "You clicked the button!", "error");
     }
   });
+}
+textarea = document.querySelector("#message");
+textarea.addEventListener('input', autoResize, false);
+
+function autoResize() {
+  this.style.height = 80;
+  this.style.height = this.scrollHeight + "px";
 }
