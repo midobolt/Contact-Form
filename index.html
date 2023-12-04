@@ -7,11 +7,14 @@
 	<div class="container">
 		<h2>Get in Touch</h2>
 		<form onsubmit="emailSend(); reset(); return false;">
-			<input type="text" id="name" placeholder="name" name="name" required>
-			<input type="text" id="phone" placeholder="phone" name="phone" required>
-			<input type="email" id="email" placeholder="email" name="email" required>
-			<input type="password" id="password" placeholder="password" name="password" required>
-			<button type="submit" class="btn">submit</button>
+			<input type="text" id="name" placeholder="Name" name="name" required>
+			<input type="text" id="phone" placeholder="Phone" name="phone" required>
+			<input type="email" id="email" placeholder="Email" name="email" required>
+			<input type="password" id="password" placeholder="Password" name="password" required>
+			<div class="grow-wrap">
+				<textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here"></textarea>
+			</div>
+			<button type="submit" class="btn">Submit</button>
 		</form>
 	</div> 
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
